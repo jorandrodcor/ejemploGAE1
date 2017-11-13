@@ -1,7 +1,7 @@
-runtime: python27
-api_version: 1
+runtime: python27 #Este código se ejecuta en el entorno de tiempo de ejecución python27, API versión 1. Es posible que en el futuro se admitan entornos e idiomas de ejecución adicionales.
+api_version: 1 #Esta aplicación es segura para el hilo, por lo que la misma instancia puede manejar varias solicitudes simultáneas. Threadsafe es una función avanzada y puede dar lugar a un comportamiento errático si su aplicación no está específicamente diseñada para ser segura.
 threadsafe: true
 
 handlers:
-- url: /.*
-  script: hola_mundo.app
+- url: /.* # Cada solicitud a una URL cuya ruta coincide con la expresión regular /.* (todas las URL) debe ser manejada por el objeto de la aplicación en el módulo holamundo.
+  script: holamundo.app
