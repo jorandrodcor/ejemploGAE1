@@ -1,0 +1,2 @@
+Para el primer ejemplo práctico de este trabajo se utilizará la consola de comandos de Google Cloud y se desarrollará una aplicación sencilla escrita en Python. 
+Se detallarán los aspectos básicos y especificaciones técnicas para subir una aplicación a la nube de Google.
